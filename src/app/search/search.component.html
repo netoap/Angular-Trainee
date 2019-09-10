@@ -1,0 +1,12 @@
+<form >
+    <h1>{{title}}</h1>    
+    <div>
+        <div> 
+            <label for="query">Query:</label>
+            <input id="query"  type="text" name="query" placeholder="Digite algo" [(ngModel)]="query"/>
+            <input type="button" class="btn btn-primary" (click)="onClickResult()" value="{{labelButton}}" />
+        </div>
+        <p>Paramatro de búsqueda: <span>{{query}}</span></p>
+        <p>Resultado: Resultado para a búsqueda: <span>{{result}}</span></p>
+    </div> 
+</form>

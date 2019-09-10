@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { search } from './search/search.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-example';
+  title = 'My first App';
+  constructor(){
+    this.title ="Hello World";
+  }
 }
