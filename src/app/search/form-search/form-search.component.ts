@@ -18,7 +18,7 @@ export class FormSearchComponent implements OnInit {
   
   search(resposta : Event ) {
     this.result= this.query; 
-    this.labelButton = "Seach";
+    this.labelButton = "Botao Clicado";
     //console.log((<HTMLInputElement>resposta.target).value)
   }
 

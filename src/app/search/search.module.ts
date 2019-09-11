@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ListOwnersComponent } from '../list-owners/list-owners.component';
 import { OwnerService } from './owner.service';
+import {InputTextModule} from 'primeng/inputtext';
+import {ButtonModule} from 'primeng/button';
 
 
 
@@ -13,6 +15,8 @@ import { OwnerService } from './owner.service';
     FormsModule,
     CommonModule,
     HttpClientModule,
+    InputTextModule,
+    ButtonModule,
   ],
   exports: [
     FormSearchComponent, ListOwnersComponent

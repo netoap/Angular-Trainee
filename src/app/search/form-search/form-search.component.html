@@ -1,10 +1,14 @@
+
 <form >
     <h1>{{title}}</h1>    
-    <div>
-        <div> 
-            <label for="query">Query:</label>
-            <input id="query"  type="text" name="query" placeholder="Digite algo" [(ngModel)]="query"/>
-            <input type="button" class="btn btn-primary" (click)="search($event)" value="{{labelButton}}" />
+    <div class="my-3">
+        <div class="d-flex justify-center"> 
+            <span class="ui-float-label">
+                <input id="query" type="text" size="30" pInputText [(ngModel)]="query" name="query"> 
+                <label for="query">Username</label>
+            </span>
+            <input id="enabled-btn" (click)="search($event)" pButton type="button" label="Primary" class="btn btn-primary d-inline-block px-2 py-1 ml-2 rounded" value="{{labelButton}}" />
+            <!--<input type="button" class="btn btn-primary" (click)="search($event)" value="{{labelButton}}" />-->
         </div>
         <p>Paramatro de búsqueda: <span>{{query}}</span></p>
         <p>Resultado: Resultado para a búsqueda: <span>{{result}}</span></p>
